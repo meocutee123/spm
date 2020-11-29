@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/common/header.css">
+    <link rel="stylesheet" href="css/common/defalult.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <div class="task-bar">
+            <div class="logo">
+                <span>スマホ</span>
+            </div>
+            <ul class="items">
+                <li><i class="fab fa-facebook-square"></i></li>
+                <li><i class="far fa-envelope"></i></li>
+                <li><i class="fab fa-facebook-messenger"></i></li>
+            </ul>    
+    </div>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <div class="login-button">
+                    <span class="login-btn" onclick="LoginFormOpen()"><i class="fas fa-sign-in-alt"></i></span>
+                </div>
+            </ul>
+        </nav>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <div class="login">
+        <div class="close" onclick="LoginFormClose()">
+            <span><i class="far fa-times-circle"></i></span>
+        </div>
+        <div class="login-form">
+
+            <form action="">
+                <img src="../assets/images/profile.png" alt="">
+                <h1>User Login</h1>
+                <div class="line">
+                    <label for="username"><i class="far fa-user"></i></label>
+                    <input type="text" name="username" id="" placeholder="Username">
+                </div>
+                
+                <div class="line">
+                    <label for="password"><i class="fas fa-unlock-alt"></i></label>
+                    <input type="password" name="password" id="" placeholder="Password">
+                </div>
+                
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/common/login.js">
+    </script>
+   
+</body>
+</html>

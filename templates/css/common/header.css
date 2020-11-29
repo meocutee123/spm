@@ -1,0 +1,268 @@
+body {
+  background-image: linear-gradient(120deg, #ffffff 0%, #ececec 100%);
+  -webkit-transition: 1s;
+  transition: 1s;
+  overflow-x: hidden;
+}
+
+.task-bar {
+  position: fixed;
+  width: 50px;
+  height: 100%;
+  background-color: #138ba0;
+}
+
+.task-bar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.task-bar .logo span {
+  padding: 10px 0;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: .5rem;
+  color: coral;
+}
+
+.task-bar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 40vh;
+  font-size: 1.3rem;
+}
+
+.task-bar ul li {
+  margin: 5vh 0;
+  cursor: pointer;
+}
+
+.task-bar ul li i {
+  font-size: 1.3rem;
+  color: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.task-bar ul li i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+header nav ul li {
+  padding: 5px 10px;
+  border-radius: 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+  margin: 0 5vw;
+}
+
+header nav ul li a {
+  font-size: 1.1rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header nav ul .login-button {
+  margin-left: auto;
+}
+
+header nav ul .login-button span {
+  font-size: 1.1rem;
+}
+
+header nav ul .login-button span i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+header nav ul li:hover {
+  background-color: #708bff;
+}
+
+header nav ul li:hover a {
+  color: white;
+}
+
+header nav .burger {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -15px);
+          transform: translate(-50%, -15px);
+  display: none;
+}
+
+header nav .burger div {
+  width: 25px;
+  height: 4px;
+  margin: 3px 0;
+  background-color: #8d8d8d;
+}
+
+.login {
+  width: 35vw;
+  height: 100%;
+  position: fixed;
+  background-color: #0d7081;
+  right: -35vw;
+  top: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.login .close {
+  font-size: 2rem;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.login .close span i {
+  color: #ffffff;
+}
+
+.login .close span i:hover {
+  color: #f3f3f3;
+}
+
+.login .login-form {
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 0 10vh 0;
+}
+
+.login .login-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.login .login-form form img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.login .login-form form h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+}
+
+.login .login-form form .line {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .login-form form .line label {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+  left: 30px;
+  z-index: 2;
+  text-align: center;
+}
+
+.login .login-form form .line label i {
+  line-height: 60px;
+  font-size: 1.3rem;
+}
+
+.login .login-form form .line input {
+  width: 70%;
+  padding: 15px 20px 15px 7%;
+  background-color: #eeeeee;
+  border-radius: 40px;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.login .login-form form button {
+  width: 40%;
+  padding: 13px 20px;
+  background-color: #eeeeee;
+  border-radius: 40px;
+  margin: 20px 0;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1rem;
+  color: #165c85;
+  cursor: pointer;
+}
+
+.login .login-form form button:hover {
+  background-color: #e6e6e6;
+}
+
+@media screen and (max-width: 768px) {
+  .login .login-form form img {
+    width: 150px;
+  }
+  .login .login-form form .line input {
+    padding: 15px 20px 15px 20%;
+  }
+}
+/*# sourceMappingURL=header.css.map */
